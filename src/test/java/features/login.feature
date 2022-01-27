@@ -6,3 +6,6 @@ Feature: Login feature test
     And I enter invalid password
     When I click login button
     Then I am not able to login successfully
+    Then I able to fetch the error message
+    Then I clicked on Okay button to return to Signin
+    Then I am at Signin page

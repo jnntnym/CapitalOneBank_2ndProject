@@ -17,7 +17,6 @@ public class Hook extends BrowserSetup {
 
     @Before
     public void startTest(){
-
         // default driver                            // Don't change any order
         if (Strings.isNullOrEmpty(driverType)){
             driverType="ch";
@@ -60,9 +59,8 @@ public class Hook extends BrowserSetup {
             System.out.println("Try block not working properly; Test Report not generated");
         }
         finally {
-            driver.quit();
+          //  driver.quit();
         }
     }
-
 }
 

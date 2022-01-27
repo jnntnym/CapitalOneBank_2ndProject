@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserSetup {
 
-    public static WebDriver driver; // Global or class level static variable is driver
+    public static WebDriver driver;                                 // Global or class level static variable is driver
 
     public static WebDriver setupBrowser(String driverName){        // String Return type method
         // Driver choose

@@ -14,12 +14,7 @@ public class loginSteps extends BrowserSetup {
     LoginPage login = new LoginPage(driver);
 
     @Given("I am at Capital one bank home page")
-    public void iAmAtCapitalOneBankHomePage() {
-        String actual =driver.getTitle();
-        String exp = "Capital One Credit Cards, Bank, and Loans - Personal and Business";
-        Assert.assertEquals(actual, exp);
-        System.out.println("You are in the right page");
-    }
+    public void iAmAtCapitalOneBankHomePage() {login.homePageAssert();}
     @And("I enter valid email")
     public void iEnterValidEmail() {
         login.enterEmail(Hook.email);
@@ -33,9 +28,11 @@ public class loginSteps extends BrowserSetup {
         login.signinButtonClick();
     }
     @Then("I am not able to login successfully")
-    public void iAmNotAbleToLoginSuccessfully() {
-        System.out.println("User should not be able to login successfully");
-        System.out.println("Test report will generate successfully under target folder");
-    }
-
+    public void iAmNotAbleToLoginSuccessfully() {login.notAbleLogin();}
+    @Then("I able to fetch the error message")
+    public void iAbleToFetchTheErrorMessage() {login.getErrorText();}
+    @Then("I clicked on Okay button to return to Signin")
+    public void iClickedOnOkayButtonToReturnToSignin() {login.clickOkayButton();}
+    @Then("I am at Signin page")
+    public void iAmAtSigninPage() {login.getSigninTitle();}
 }

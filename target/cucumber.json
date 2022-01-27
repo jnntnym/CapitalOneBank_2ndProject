@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-27T00:15:44.854Z",
+        "start_timestamp": "2022-01-27T17:30:35.555Z",
         "before": [
           {
             "result": {
-              "duration": 9435417000,
+              "duration": 15076000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 293318000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38517000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 313178000,
+              "duration": 458000000,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 178259000,
+              "duration": 230000000,
               "status": "passed"
             },
             "line": 6,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 539818000,
+              "duration": 592000000,
               "status": "passed"
             },
             "line": 7,
@@ -83,13 +83,49 @@
           },
           {
             "result": {
-              "duration": 130000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
             "name": "I am not able to login successfully",
             "match": {
               "location": "stepDef.loginSteps.iAmNotAbleToLoginSuccessfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1568000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I able to fetch the error message",
+            "match": {
+              "location": "stepDef.loginSteps.iAbleToFetchTheErrorMessage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 454000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I clicked on Okay button to return to Signin",
+            "match": {
+              "location": "stepDef.loginSteps.iClickedOnOkayButtonToReturnToSignin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am at Signin page",
+            "match": {
+              "location": "stepDef.loginSteps.iAmAtSigninPage()"
             },
             "keyword": "Then "
           }

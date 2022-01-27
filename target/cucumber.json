@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-27T00:15:44.854Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9435417000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login with valid credential",
+        "description": "",
+        "id": "login-feature-test;login-with-valid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 293318000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38517000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at Capital one bank home page",
+            "match": {
+              "location": "stepDef.loginSteps.iAmAtCapitalOneBankHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 313178000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter valid email",
+            "match": {
+              "location": "stepDef.loginSteps.iEnterValidEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178259000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter invalid password",
+            "match": {
+              "location": "stepDef.loginSteps.iEnterInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 539818000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click login button",
+            "match": {
+              "location": "stepDef.loginSteps.iClickLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am not able to login successfully",
+            "match": {
+              "location": "stepDef.loginSteps.iAmNotAbleToLoginSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature test",
+    "description": "",
+    "id": "login-feature-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]

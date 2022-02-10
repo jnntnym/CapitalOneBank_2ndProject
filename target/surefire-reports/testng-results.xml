@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-27T11:44:03 EST" name="Surefire suite" finished-at="2022-01-27T11:44:26 EST" duration-ms="22823">
+  <suite started-at="2022-02-09T20:23:27 EST" name="Surefire suite" finished-at="2022-02-09T20:23:36 EST" duration-ms="9001">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6483f5ae]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@679b62af]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-01-27T11:44:03 EST" name="Surefire test" finished-at="2022-01-27T11:44:26 EST" duration-ms="22823">
+    <test started-at="2022-02-09T20:23:27 EST" name="Surefire test" finished-at="2022-02-09T20:23:36 EST" duration-ms="9001">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@6483f5ae]" started-at="2022-01-27T11:44:03 EST" name="setUpClass" finished-at="2022-01-27T11:44:04 EST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@679b62af]" started-at="2022-02-09T20:23:27 EST" name="setUpClass" finished-at="2022-02-09T20:23:27 EST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6483f5ae]" started-at="2022-01-27T11:44:04 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-27T11:44:26 EST" duration-ms="22163" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@679b62af]" started-at="2022-02-09T20:23:27 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-09T20:23:35 EST" duration-ms="8257" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <input id="ods-input-0" class="login-username grv-textfield__input ng-untouched ng-pristine ng-invalid" name="ods-input-0" type="text"> is not reachable by keyboard
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jannats-Air.fios-router.home', ip: 'fe80:0:0:0:1846:13b4:3ffc:b00f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 3004, moz:profile: /var/folders/4f/ct50_7bx2x5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f53902f6-9117-8847-a830-a5de2dd1de17]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input id="ods-input-0" class="login-username grv-textfield__input ng-untouched ng-pristine ng-invalid" name="ods-input-0" type="text"> is not reachable by keyboard
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jannats-Air.fios-router.home', ip: 'fe80:0:0:0:1846:13b4:3ffc:b00f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 3004, moz:profile: /var/folders/4f/ct50_7bx2x5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f53902f6-9117-8847-a830-a5de2dd1de17
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+at pageObject.LoginPage.enterEmail(LoginPage.java:40)
+at stepDef.loginSteps.iEnterValidEmail(loginSteps.java:20)
+at ✽.I enter valid email(file:///Users/jannatulnayeem/Documents/QA_Automation/GitProject/CapitalOneBankBDDCucumberFramework_2022/CapitalOneBankBDDCucumberFramework_2022/src/test/java/features/login.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@6483f5ae]" started-at="2022-01-27T11:44:26 EST" name="tearDownClass" finished-at="2022-01-27T11:44:26 EST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@679b62af]" started-at="2022-02-09T20:23:35 EST" name="tearDownClass" finished-at="2022-02-09T20:23:36 EST" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

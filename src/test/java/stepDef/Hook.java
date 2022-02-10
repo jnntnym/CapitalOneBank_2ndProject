@@ -24,7 +24,6 @@ public class Hook extends BrowserSetup {
         // default envData
         if(Strings.isNullOrEmpty(envData)){
             envData="qa";
-          //  envData="https://www.capitalone.com";  // Not allowed
         }
         // Choose the envData, which we want to
         driver = setupBrowser(driverType);           // Calling method from base class -BrowserSetup

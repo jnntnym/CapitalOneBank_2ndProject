@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +24,10 @@ public class BrowserSetup {
         }else if(driverName.equalsIgnoreCase("ie")){     // ie = internet explorer
             WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
+            driver = new SafariDriver();
+        }else if(driverName.equalsIgnoreCase("sf")){     // ie = internet explorer
+            WebDriverManager.iedriver().setup();
+            driver = new SafariDriver();
         }
         // Driver actions
         driver.manage().deleteAllCookies();

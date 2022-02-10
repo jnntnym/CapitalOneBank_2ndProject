@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.409 s - in TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.457 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["login with valid credential", "Optional[Login feature test]"](1)  Time elapsed: 8.425 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <input id="ods-input-0" class="login-username grv-textfield__input ng-untouched ng-pristine ng-invalid" name="ods-input-0" type="text"> is not reachable by keyboard
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jannats-Air.fios-router.home', ip: 'fe80:0:0:0:1846:13b4:3ffc:b00f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 3004, moz:profile: /var/folders/4f/ct50_7bx2x5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f53902f6-9117-8847-a830-a5de2dd1de17
+

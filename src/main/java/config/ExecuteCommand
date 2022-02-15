@@ -3,7 +3,6 @@ Execute shell command
 mvn clean install
 mvn test
 ************************
-mvn verify -Denv=qa -Dbrowser=ch
 
 mvn verify -Denv=stg -Dbrowser=ch
 
